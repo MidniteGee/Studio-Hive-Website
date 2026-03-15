@@ -5123,19 +5123,18 @@ body.rounded-btns .read-more {
 }
 .pricing .plan .plan-head .plan-price .price {
   position: relative;
-  font-size: 4rem;
+  font-size: 3.25rem;
   font-weight: 600;
   line-height: 1;
 }
 .pricing .plan .plan-head .plan-price .currency-symbol {
-  position: absolute;
-  font-size: 1.5rem;
+  position: relative;
+  font-size: 1.25rem;
   font-weight: 500;
-  top: 1rem;
-  right: -1rem;
-  line-height: 0;
-  vertical-align: baseline;
+  line-height: inherit;
+  vertical-align: super;
   display: inline-block;
+  margin-left: 0.25rem;
   color: var(--clr-main);
 }
 .pricing .plan .plan-head .plan-price .per {

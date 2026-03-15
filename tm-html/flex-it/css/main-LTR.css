@@ -5078,6 +5078,20 @@ body.rounded-btns .read-more {
   transition: all 0.3s ease-in-out 0s;
   box-shadow: 1px 1px 10px 0px rgba(var(--clr-dark-blue-rgb), 0.15);
 }
+.pricing .plan .plan-head .plan-price .currency-symbol {
+  /* position: absolute;  <-- REMOVE or change to 'relative' */
+  /* top: 1rem;           <-- REMOVE */
+  /* left: -1rem;         <-- REMOVE */
+  position: relative; /* Brings it back into the normal flow */
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: inherit; /* Adjust if needed */
+  vertical-align: baseline; /* Adjust depending on how you want it aligned relative to the text */
+  margin-right: 0.25rem; /* Optional: adds a tiny bit of space before the number */
+  display: inline-block;
+  color: var(--clr-main);
+}
+
 @media (max-width: 1199px) {
   .pricing .plan {
     margin-bottom: 2rem;
@@ -5119,19 +5133,18 @@ body.rounded-btns .read-more {
 }
 .pricing .plan .plan-head .plan-price .price {
   position: relative;
-  font-size: 4rem;
+  font-size: 3.25rem;
   font-weight: 600;
   line-height: 1;
 }
 .pricing .plan .plan-head .plan-price .currency-symbol {
-  position: absolute;
-  font-size: 1.5rem;
+  position: relative;
+  font-size: 1.25rem;
   font-weight: 500;
-  top: 1rem;
-  left: -1rem;
-  line-height: 0;
-  vertical-align: baseline;
+  line-height: inherit;
+  vertical-align: super;
   display: inline-block;
+  margin-right: 0.25rem;
   color: var(--clr-main);
 }
 .pricing .plan .plan-head .plan-price .per {
